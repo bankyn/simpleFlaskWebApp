@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <h2> {{ the_title }}</h2>
+
+
+    <p>You used the following data:</p>
+    <table>
+
+        <tr> <td>Text:</td> <td>{{ the_phrase }}</td> </tr>
+        <tr> <td>Letters:</td> <td>{{ the_letters }}</td> </tr>
+
+    </table>
+
+    <p>The fearch in "{{ the_phrase }}" of "{{ the_letters }} delivered the following result:"</p>
+    <h3>{{ the_results }}</h3>
+
+{% endblock %}
