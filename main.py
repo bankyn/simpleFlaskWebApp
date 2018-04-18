@@ -10,10 +10,13 @@ def index():
 
 
 @app.route('/search4', methods=['POST', 'GET'])
-def do_search() -> str:
+def do_search() -> 'html':
     phrase = request.form['phrase']
     letters = request.form['letters']
-    return str(search4letters(phrase, letters))
+    results = str(search4letters(phrase, letters))
+    title = 'Here are your search matches:'
+
+    return render_template('results.html', the_title=title, the_results=results, the_letters=letters, the_phrase=phrase)
 
 
 @app.route('/entry')
