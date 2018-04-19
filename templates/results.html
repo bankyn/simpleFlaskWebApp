@@ -7,12 +7,29 @@
     <p>You used the following data:</p>
     <table>
 
-        <tr> <td>Text:</td> <td>{{ the_phrase }}</td> </tr>
-        <tr> <td>Letters:</td> <td>{{ the_letters }}</td> </tr>
+        <tr>
+            <td>Text:</td>
+            <td>{{ the_phrase }}</td>
+        </tr>
+        <tr>
+            <td>Letters:</td>
+            <td>{{ the_letters }}</td>
+        </tr>
+        <tr>
+            <td>
+                <p>The search of "{{ the_letters }}" in "{{ the_phrase }}"  delivered the following result:</p>
+            </td>
+            <td>
+                <h3>{{ the_results }}</h3>
+            </td>
+        </tr>
+        <tr>
+            <td><button formaction="">Search again</button></td>
+            <td><button type="reset">clear</button></td>
+        </tr>
 
     </table>
 
-    <p>The search of "{{ the_letters }}" in "{{ the_phrase }}"  delivered the following result:</p>
-    <h3>{{ the_results }}</h3>
+
 
 {% endblock %}
