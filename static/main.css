@@ -1,37 +1,47 @@
 body {
-  font-family:      Verdana, Geneva, Arial, sans-serif;
+  font-family:      "Open Sans", sans-serif;
   font-size:        medium;
-  background-color: tan;
   margin-top:       5%;
   margin-bottom:    5%;
   margin-left:      10%;
   margin-right:     10%;
-  border:           1px dotted gray;
   padding:          10px 10px 10px 10px;
+  letter-spacing:   0.8pt;
 }
+
 a {
-  text-decoration:  none;
-  font-weight:      600;
+    color: blueviolet;
+    text-decoration-line: none;
+    font-weight:      600;
 }
+
 a:hover {
   text-decoration:  underline;
 }
+
 a img {
   border:           0;
 }
+
 h2 {
   font-size:        150%;
 }
-table {
-  margin-left:      20px;
-  margin-right:     20px;
-  caption-side:     bottom;
-  border-collapse:  collapse;
+
+p {
+    margin-top: 20px;
 }
+
+tr {
+    padding-bottom: 10px;
+    padding-top:    10px;
+}
+
 td, th {
-  padding:          5px;
-  text-align:       left;
+  padding:          20px;
+  margin-bottom:    10px;
+  font-weight:      bold;
 }
+
 .copyright {
   font-size:        75%;
   font-style:       italic;
@@ -47,26 +57,39 @@ td, th {
 /*** Tables ***/
 
 table {
-font-size:          1em;
-background-color:   #fafcff;
-border:             1px solid #909090;
-color:              #2a2a2a;
-padding:            5px 5px 2px;
-border-collapse:    collapse;
-}
-
-td, th {
-border:             thin dotted gray;
+  font-size:          1em;
+  background-color:   #939dbf66;;
+  color:              #2a2a2a;
 }
 
 /*** Inputs ***/
 input[type=text] {
-  font-size:        115%;
+  font-size:        120%;
   width:            30em;
+  height:           20pt;
 }
-input[type=submit] {
-  font-size:        125%;
+
+button {
+	background-color:       #ffffff;
+	display:                inline-block;
+	cursor:                 pointer;
+	color:                  rgba(92, 99, 155, 0.99);
+	font-size:              16px;
+    font-weight:            bold;
+	padding:                8px 24px;
+	text-decoration:        none;
+    border:                 none;
+    letter-spacing: 1px;
 }
-select {
-  font-size:        125%;
+button:hover {
+	background-color:       #5c639b;
+    color:                  white;
+    font-weight:            bold;
+}
+button:focus {
+    outline:                none;
+}
+button:active {
+	position:               relative;
+	top:                    1px;
 }

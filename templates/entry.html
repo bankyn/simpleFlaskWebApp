@@ -3,18 +3,26 @@
 {% block body %}
     <h2> {{ the_title }}</h2>
 
-    <form method="POST" action="/search4">
+    <form id="form1" method="POST" action="/search4">
 
     <table>
 
         <p>Use this formular for your search:</p>
-        <tr> <td>Text:</td> <td><input name="phrase" type="TEXT" width="60"></td> </tr>
-        <tr> <td>Letters:</td> <td><input name="letters" type="TEXT" value="aeiou"></td> </tr>
-
+        <tr>
+            <td>Text:</td>
+            <td><input name="phrase" type="TEXT" width="60"></td>
+        </tr>
+        <tr>
+            <td>Letters:</td>
+            <td><input name="letters" type="TEXT"></td>
+        </tr>
+        <tr>
+            <td><button type="SUBMIT">Search</button></td>
+            <td><button form="form1" type="reset">clear</button></td>
+        </tr>
     </table>
 
-    <p>Wen you are ready, click here:</p>
-    <p><input value="Go!" type="SUBMIT"></p>
+
 
     </form>
 {% endblock %}

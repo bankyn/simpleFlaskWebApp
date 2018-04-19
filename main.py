@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from functions import search4letters
 
 app = Flask(__name__)
@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hello World!'
+    return redirect('/entry')
 
 
 @app.route('/search4', methods=['POST', 'GET'])
@@ -14,9 +14,9 @@ def do_search() -> 'html':
     phrase = request.form['phrase']
     letters = request.form['letters']
     results = str(search4letters(phrase, letters))
-    title = 'Here are your search matches:'
+    title = 'Letter Search Results'
 
-    return render_template('results.html', the_title=title, the_results=results, the_letters=letters, the_phrase=phrase)
+    return render_template('results.html', the_title = title, the_results = results, the_letters = letters, the_phrase = phrase)
 
 
 @app.route('/entry')
@@ -25,4 +25,5 @@ def entry_page() -> 'html':
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run() # flask defaults: host 127.0.0.1 port 5000
+    # app.run(host='0.0.0.0', port=80)
