@@ -3,6 +3,7 @@
 {% block body %}
     <h2> {{ the_title }}</h2>
 
+    <form id="form2" method="POST" action="/entry">
 
     <p>You used the following data:</p>
     <table>
@@ -24,8 +25,8 @@
             </td>
         </tr>
         <tr>
-            <td><button formaction="">Search again</button></td>
-            <td><button type="reset">clear</button></td>
+            <td><button formaction="/entry">Search again</button></td>
+            <td><button formaction="/entry">clear</button></td>
         </tr>
 
     </table>
