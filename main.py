@@ -3,17 +3,23 @@ from functions import search4letters
 
 app = Flask(__name__)
 
+def log_request(req: 'flask_request', res: str) -> None:
+    with open('lsearch.log', 'a') as log:
+        print(req, res, file=log)
+
 
 @app.route('/search4', methods=['POST', 'GET'])
 def do_search() -> 'html':
     phrase = request.form['phrase']
     letters = request.form['letters']
-    results_dict = search4letters(phrase, letters)
-    if results_dict is not None:
-        results = ''.join(i + ',' for i in results_dict).rstrip(',')
+    tmp_results = search4letters(phrase, letters)
+
+    if tmp_results:
+        results = ''.join(i + ',' for i in tmp_results).rstrip(',')
     else:
         results = '(no match)'
     title = 'Letter Search Results'
+    log_request(request, results)
 
     return render_template('results.html', the_title=title, the_results=results, the_letters=letters, the_phrase=phrase)
 
