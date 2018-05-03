@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 def log_request(req: 'flask_request', res: str) -> None:
     with open('lsearch.log', 'a') as log:
-        print(req.form, req.remote_addr, req.user_agent, res, file=log, sep='|')
+        print(req.form, res, req.remote_addr, req.user_agent, file=log, sep='|')
 
 @app.route('/search4', methods=['POST', 'GET'])
 def do_search() -> 'html':
@@ -29,9 +29,16 @@ def entry_page() -> 'html':
 
 @app.route('/viewlog', methods=['POST'])
 def view_the_log() -> str:
+    contents = []
     with open('lsearch.log') as log:
-        contents = log.read()
-    return escape(contents)
+        for line in log:
+            contents.append([])
+            for item in line.split('|'):
+                contents[-1].append(escape(item))
+    page_title = 'View Log'
+    titles = ('Form Data', 'Results', 'Remote Addr', 'User_agent')
+    return render_template('viewlog.html', the_title=page_title, the_data=contents, the_titles=titles)
+    #return str(contents)
 
 @app.route('/clearlog', methods=['POST'])
 def clear_the_log():
