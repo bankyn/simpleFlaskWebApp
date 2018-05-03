@@ -12,10 +12,14 @@
             <td>Text:</td>
             <td>{{ the_phrase }}</td>
         </tr>
+
         <tr>
             <td>Letters:</td>
             <td>{{ the_letters }}</td>
+            <td></td>
+            <td></td>
         </tr>
+
         <tr>
             <td>
                 <p>The search of "{{ the_letters }}" in "{{ the_phrase }}"  delivered the following result:</p>
@@ -23,10 +27,17 @@
             <td>
                 <h3>{{ the_results }}</h3>
             </td>
+            <td></td>
+            <td></td>
         </tr>
+
         <tr>
+
             <td><button formaction="/entry">Search again</button></td>
-            <td><button formaction="/entry">clear</button></td>
+            <td><button formaction="/viewlog">View Log</button></td>
+            <td><button formaction="/entry">Clear</button></td>
+            <td><button formaction="/clearlog">Clear Log</button></td>
+
         </tr>
 
     </table>

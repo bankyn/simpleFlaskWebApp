@@ -1,6 +1,10 @@
-<Request 'http://127.0.0.1:5000/search4' [POST]> o,i,e,a
-<Request 'http://127.0.0.1:5000/search4' [POST]> 
-<Request 'http://127.0.0.1:5000/search4' [POST]> 
-<Request 'http://127.0.0.1:5000/search4' [POST]> e,s
-<Request 'http://127.0.0.1:5000/search4' [POST]> 
-<Request 'http://127.0.0.1:5000/search4' [POST]> (no match)
+ImmutableMultiDict([('phrase', 'test search letters with following string'), ('letters', 'abcdefg')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36|f,c,a,e,g
+ImmutableMultiDict([('phrase', 'life, the universe and everything'), ('letters', 'abcdefghi')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36|d,i,e,a,f,g,h
+ImmutableMultiDict([('phrase', 'life, the universe and everything'), ('letters', 'abcdefghi')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36|d,i,e,a,f,g,h
+ImmutableMultiDict([('phrase', 'life, the universe and everything'), ('letters', 'abcdefghi')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36|d,i,e,a,f,g,h
+ImmutableMultiDict([('phrase', 'life, the universe and everything'), ('letters', 'abcdefghi')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36|d,i,e,a,f,g,h
+ImmutableMultiDict([('phrase', 'test search letters with following string'), ('letters', 'safvvd')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36|a,f,s
+ImmutableMultiDict([('phrase', 'test search letters with following string'), ('letters', 'safvvd')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36|a,f,s
+ImmutableMultiDict([('phrase', 'test search letters with following string'), ('letters', 'SFG')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36|(no match)
+ImmutableMultiDict([('phrase', 'test search letters with following string'), ('letters', 'SFG')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36|(no match)
+ImmutableMultiDict([('phrase', 'test search letters with following string'), ('letters', 'SFG')])|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36|(no match)
