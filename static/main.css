@@ -5,12 +5,10 @@ body {
   margin-bottom:    5%;
   margin-left:      8%;
   margin-right:     10%;
-
   letter-spacing:   0.8pt;
 }
 
 a {
-    color: blueviolet;
     text-decoration-line: none;
     font-weight:      600;
 }
@@ -69,7 +67,6 @@ input[type=text] {
 }
 
 button {
-	background-color:       #ffffff;
 	display:                inline-block;
 	cursor:                 pointer;
 	color:                  rgba(92, 99, 155, 0.99);
@@ -77,12 +74,12 @@ button {
     font-weight:            bold;
 	padding:                8px 24px;
 	text-decoration:        none;
-    border:                 none;
-    letter-spacing: 1px;
+    border:                 solid 1.6px;
+    background-color:       transparent;
+    letter-spacing:         1px;
 }
 
 button:hover {
-	background-color:       #70b6f0; /*#5c639b;*/
     color:                  white;
     font-weight:            bold;
 }
@@ -94,15 +91,13 @@ button:active {
 	top:                    1px;
 }
 
-a.button {
-	background-color:       #ffffff;
-	display:                inline-block;
-	cursor:                 pointer;
-	color:                  rgba(92, 99, 155, 0.99);
-	font-size:              16px;
-    font-weight:            bold;
-	padding:                8px 24px;
-	text-decoration:        none;
-    border:                 none;
-    letter-spacing: 1px;
+
+button#clearlog{
+    background-color: transparent;
+    border: solid 1px;
+
+}
+
+button#clearlog:hover{
+    color: #47515B;
 }

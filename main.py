@@ -35,10 +35,11 @@ def view_the_log() -> str:
             contents.append([])
             for item in line.split('|'):
                 contents[-1].append(escape(item))
+
     page_title = 'View Log'
     titles = ('Form Data', 'Results', 'Remote Addr', 'User_agent')
     return render_template('viewlog.html', the_title=page_title, the_data=contents, the_titles=titles)
-    #return str(contents)
+
 
 @app.route('/clearlog', methods=['POST'])
 def clear_the_log():

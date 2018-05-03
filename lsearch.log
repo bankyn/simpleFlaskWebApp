@@ -3,3 +3,6 @@ ImmutableMultiDict([('phrase', 'the life the universe and everything'), ('letter
 ImmutableMultiDict([('phrase', 'search string containing numbers 284970238760875'), ('letters', 'ccy57ndfg')])|c,g,7,5,n|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 ImmutableMultiDict([('phrase', '!"§$%&/()====?'), ('letters', '`)(/&%$§"')])|(,$,%,),",/,§,&|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
 ImmutableMultiDict([('phrase', 'SEARCH FOR CAPS'), ('letters', 'sökuedhzfIHGKIHSDF')])|S,F,H|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+ImmutableMultiDict([('phrase', 'kusrfgosjdghbf'), ('letters', 'cf,gjrh')])|g,h,f,j,r|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+ImmutableMultiDict([('phrase', 'xfghxfj'), ('letters', 'gh')])|g,h|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+ImmutableMultiDict([('phrase', 'fgz'), ('letters', 'a')])|(no match)|127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
