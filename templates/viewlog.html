@@ -4,19 +4,26 @@
 
 <h2>{{ the_title }}</h2>
 
-<table>
-    <tr>
-        {%  for title in the_titles %}
-            <th>{{ title }}</th>
-        {% endfor %}
-    </tr>
-    {% for log_row in the_data %}
-        <tr>
-            {% for item in log_row %}
-                <td>{{ item }}</td>
-            {%  endfor %}
-        </tr>
-    {% endfor %}
-</table>
+<form id="form3" method="POST" action="/entry">
 
+    <table>
+        <tr>
+            {%  for title in the_titles %}
+                <th>{{ title }}</th>
+            {% endfor %}
+        </tr>
+        {% for log_row in the_data %}
+            <tr>
+                {% for item in log_row %}
+                    <td>{{ item }}</td>
+                {%  endfor %}
+            </tr>
+        {% endfor %}
+
+        <tr>
+            <td><button formaction="/entry">Back</button></td>
+        </tr>
+
+    </table>
+</form>
 {% endblock %}
